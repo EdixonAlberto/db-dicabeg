@@ -1,0 +1,35 @@
+{
+  "name": "db-dicabeg",
+  "version": "1.0.0",
+  "description": "servidor de datos para projecto dicabeg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/EdixonAlberto/db-dicabeg.git"
+  },
+  "keywords": [
+    "server",
+    "data",
+    "node",
+    "express"
+  ],
+  "author": {
+    "name": "Edixon Alberto",
+    "email": "edixonalbertto@gmail.com",
+    "url": "https://www.linkedin.com/in/edixonalberto"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdixonAlberto/db-dicabeg/issues"
+  },
+  "homepage": "https://github.com/EdixonAlberto/db-dicabeg#readme",
+  "engines": {
+    "node": "10.13.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

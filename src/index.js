@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const router = require('./routes/index');
@@ -6,7 +7,6 @@ const router = require('./routes/index');
 const app = express();
 
 // Settings
-app.set('port', process.env.PORT || 3000); // Establecer puerto dinamico
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -14,6 +14,10 @@ app.set('view engine', 'ejs');
 app.use('/', router); // Home
 
 // Server ON
-app.listen(3000, () => {
-    console.log(`Server on port ${app.get('port')}`);
-});
+const PORT = parseInt(process.env.PORT);
+
+if (PORT == 80) {
+    app.listen(PORT, 'db-dicabeg.test', () => {
+        console.log(`Server on port ${PORT}`)
+    });
+} else app.listen(PORT);
